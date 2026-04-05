@@ -9,5 +9,3 @@ cd TG-Dashboard-Public
 pip install -r requirements.txt
 echo "✅ Selesai! Jalankan: python app.py"
 EOF
-
-chmod +x setup.sh
