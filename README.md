@@ -11,6 +11,8 @@ Create a file ```.env```, fill it with the following example:
 ```ADMIN_ID=YOUR_ID```
 ```METHOD_GROUP=https://t.me/...```
 ```OTP_GROUP=https://t.me/...```
+```FLASK_SECRET_KEY=your_random_secret_key_here```
+```PORT=your_port```
 
 Save it, ```ctrl+x+y``` enter, then run the command ```./setup.sh```.
 
