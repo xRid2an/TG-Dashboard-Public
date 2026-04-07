@@ -50,10 +50,10 @@ ADMIN_STATE: dict = {}
 
 # ─── SERVICE ICONS & COLORS ───────────────────────────────────────────────────
 SERVICE_ICONS = {
-    "whatsapp": "💚", "facebook": "💙", "telegram": "💙", "google": "🔴",
-    "instagram": "💜", "twitter": "🔵", "tiktok": "🖤", "linkedin": "🔵",
-    "snapchat": "💛", "netflix": "🔴", "spotify": "🟢", "amazon": "🟠",
-    "shopee": "🟠", "default": "📱"
+    "whatsapp": " ", "facebook": " ", "telegram": " ", "google": " ",
+    "instagram": " ", "twitter": " ", "tiktok": " ", "linkedin": " ",
+    "snapchat": " ", "netflix": " ", "spotify": " ", "amazon": " ",
+    "shopee": " ", "default": " "
 }
 
 def get_service_icon(service_name: str) -> str:
@@ -63,22 +63,124 @@ def get_service_icon(service_name: str) -> str:
             return icon
     return SERVICE_ICONS["default"]
 
-# ─── COUNTRY FLAG HELPER ──────────────────────────────────────────────────────
+# ─── COUNTRY FLAGS LENGKAP ───────────────────────────────────────────────────
 COUNTRY_FLAGS = {
+    # Asia Tenggara
     "indonesia": "🇮🇩", "malaysia": "🇲🇾", "singapore": "🇸🇬", "thailand": "🇹🇭",
     "vietnam": "🇻🇳", "philippines": "🇵🇭", "myanmar": "🇲🇲", "laos": "🇱🇦",
-    "cambodia": "🇰🇭", "usa": "🇺🇸", "uk": "🇬🇧", "japan": "🇯🇵",
-    "south korea": "🇰🇷", "china": "🇨🇳", "india": "🇮🇳", "australia": "🇦🇺",
-    "brazil": "🇧🇷", "germany": "🇩🇪", "france": "🇫🇷", "russia": "🇷🇺",
+    "cambodia": "🇰🇭", "brunei": "🇧🇳", "timor leste": "🇹🇱",
+    
+    # Asia Timur
+    "japan": "🇯🇵", "south korea": "🇰🇷", "china": "🇨🇳", "taiwan": "🇹🇼",
+    "hong kong": "🇭🇰", "macau": "🇲🇴", "mongolia": "🇲🇳", "north korea": "🇰🇵",
+    
+    # Asia Selatan
+    "india": "🇮🇳", "pakistan": "🇵🇰", "bangladesh": "🇧🇩", "sri lanka": "🇱🇰",
+    "nepal": "🇳🇵", "bhutan": "🇧🇹", "maldives": "🇲🇻", "afghanistan": "🇦🇫",
+    
+    # Asia Barat (Timur Tengah)
+    "turkey": "🇹🇷", "saudi arabia": "🇸🇦", "uae": "🇦🇪", "united arab emirates": "🇦🇪",
+    "qatar": "🇶🇦", "kuwait": "🇰🇼", "bahrain": "🇧🇭", "oman": "🇴🇲",
+    "yemen": "🇾🇪", "jordan": "🇯🇴", "lebanon": "🇱🇧", "syria": "🇸🇾",
+    "iraq": "🇮🇶", "iran": "🇮🇷", "israel": "🇮🇱", "palestine": "🇵🇸",
+    "cyprus": "🇨🇾", "armenia": "🇦🇲", "azerbaijan": "🇦🇿", "georgia": "🇬🇪",
+    
+    # Asia Tengah
+    "kazakhstan": "🇰🇿", "uzbekistan": "🇺🇿", "turkmenistan": "🇹🇲",
+    "kyrgyzstan": "🇰🇬", "tajikistan": "🇹🇯",
+    
+    # Eropa Barat
+    "uk": "🇬🇧", "united kingdom": "🇬🇧", "england": "🇬🇧", "great britain": "🇬🇧",
+    "germany": "🇩🇪", "france": "🇫🇷", "netherlands": "🇳🇱", "belgium": "🇧🇪",
+    "austria": "🇦🇹", "switzerland": "🇨🇭", "luxembourg": "🇱🇺", "ireland": "🇮🇪",
+    "monaco": "🇲🇨", "liechtenstein": "🇱🇮",
+    
+    # Eropa Utara
+    "sweden": "🇸🇪", "norway": "🇳🇴", "denmark": "🇩🇰", "finland": "🇫🇮",
+    "iceland": "🇮🇸", "estonia": "🇪🇪", "latvia": "🇱🇻", "lithuania": "🇱🇹",
+    
+    # Eropa Selatan
+    "italy": "🇮🇹", "spain": "🇪🇸", "portugal": "🇵🇹", "greece": "🇬🇷",
+    "croatia": "🇭🇷", "serbia": "🇷🇸", "slovenia": "🇸🇮", "slovakia": "🇸🇰",
+    "bosnia": "🇧🇦", "bosnia and herzegovina": "🇧🇦", "montenegro": "🇲🇪",
+    "albania": "🇦🇱", "north macedonia": "🇲🇰", "kosovo": "🇽🇰", "malta": "🇲🇹",
+    "andorra": "🇦🇩", "san marino": "🇸🇲", "vatican": "🇻🇦",
+    
+    # Eropa Timur
+    "russia": "🇷🇺", "poland": "🇵🇱", "czechia": "🇨🇿", "czech republic": "🇨🇿",
+    "hungary": "🇭🇺", "romania": "🇷🇴", "bulgaria": "🇧🇬", "ukraine": "🇺🇦",
+    "belarus": "🇧🇾", "moldova": "🇲🇩",
+    
+    # Amerika Utara
+    "usa": "🇺🇸", "united states": "🇺🇸", "america": "🇺🇸", "canada": "🇨🇦",
+    "mexico": "🇲🇽", "greenland": "🇬🇱",
+    
+    # Amerika Tengah & Karibia
+    "guatemala": "🇬🇹", "belize": "🇧🇿", "honduras": "🇭🇳", "el salvador": "🇸🇻",
+    "nicaragua": "🇳🇮", "costa rica": "🇨🇷", "panama": "🇵🇦",
+    "cuba": "🇨🇺", "jamaica": "🇯🇲", "haiti": "🇭🇹", "dominican republic": "🇩🇴",
+    "puerto rico": "🇵🇷", "bahamas": "🇧🇸", "trinidad": "🇹🇹", "barbados": "🇧🇧",
+    
+    # Amerika Selatan
+    "brazil": "🇧🇷", "argentina": "🇦🇷", "chile": "🇨🇱", "peru": "🇵🇪",
+    "colombia": "🇨🇴", "venezuela": "🇻🇪", "ecuador": "🇪🇨", "bolivia": "🇧🇴",
+    "paraguay": "🇵🇾", "uruguay": "🇺🇾", "guyana": "🇬🇾", "suriname": "🇸🇷",
+    "french guiana": "🇬🇫",
+    
+    # Afrika Utara
+    "egypt": "🇪🇬", "morocco": "🇲🇦", "algeria": "🇩🇿", "tunisia": "🇹🇳",
+    "libya": "🇱🇾", "sudan": "🇸🇩", "south sudan": "🇸🇸", "mauritania": "🇲🇷",
+    
+    # Afrika Barat
+    "nigeria": "🇳🇬", "ghana": "🇬🇭", "ivory coast": "🇨🇮", "cote d'ivoire": "🇨🇮",
+    "senegal": "🇸🇳", "mali": "🇲🇱", "burkina faso": "🇧🇫", "benin": "🇧🇯",
+    "guinea": "🇬🇳", "sierra leone": "🇸🇱", "liberia": "🇱🇷", "gambia": "🇬🇲",
+    "togo": "🇹🇬", "niger": "🇳🇪", "cameroon": "🇨🇲", "cape verde": "🇨🇻",
+    
+    # Afrika Tengah
+    "congo": "🇨🇬", "drc": "🇨🇩", "democratic republic of congo": "🇨🇩",
+    "angola": "🇦🇴", "chad": "🇹🇩", "gabon": "🇬🇦", "equatorial guinea": "🇬🇶",
+    "central african republic": "🇨🇫", "rwanda": "🇷🇼", "burundi": "🇧🇮",
+    
+    # Afrika Timur
+    "kenya": "🇰🇪", "tanzania": "🇹🇿", "uganda": "🇺🇬", "ethiopia": "🇪🇹",
+    "somalia": "🇸🇴", "djibouti": "🇩🇯", "eritrea": "🇪🇷", "mozambique": "🇲🇿",
+    "madagascar": "🇲🇬", "comoros": "🇰🇲", "mauritius": "🇲🇺", "seychelles": "🇸🇨",
+    
+    # Afrika Selatan
+    "south africa": "🇿🇦", "namibia": "🇳🇦", "botswana": "🇧🇼", "zimbabwe": "🇿🇼",
+    "zambia": "🇿🇲", "malawi": "🇲🇼", "lesotho": "🇱🇸", "eswatini": "🇸🇿",
+    
+    # Oceania
+    "australia": "🇦🇺", "new zealand": "🇳🇿", "papua new guinea": "🇵🇬",
+    "fiji": "🇫🇯", "solomon islands": "🇸🇧", "vanuatu": "🇻🇺", "samoa": "🇼🇸",
+    "tonga": "🇹🇴", "micronesia": "🇫🇲", "marshall islands": "🇲🇭", "palau": "🇵🇼",
+    "nauru": "🇳🇷", "kiribati": "🇰🇮", "tuvalu": "🇹🇻",
 }
 
 def get_country_flag(country_name: str) -> str:
+    """Mendapatkan flag dari nama negara dengan pencarian cerdas"""
+    if not country_name:
+        return "🌍"
+    
     key = country_name.strip().lower()
+    
+    # Coba cari exact match
+    if key in COUNTRY_FLAGS:
+        return COUNTRY_FLAGS[key]
+    
+    # Hapus kata-kata umum
+    key_clean = key.replace("the ", "").replace("republic of ", "").replace("kingdom of ", "")
+    if key_clean in COUNTRY_FLAGS:
+        return COUNTRY_FLAGS[key_clean]
+    
+    # Coba partial match
     for name, flag in COUNTRY_FLAGS.items():
-        if key == name or key.startswith(name) or name in key:
+        if name in key or key in name:
             return flag
+    
     return "🌍"
-
+    
 def clean_country_name(raw_name: str) -> str:
     name = raw_name.replace('.txt', '')
     patterns = [r'[A-Z]{2,}-\d+-\d{4}-\d{2}-\d{2}', r'[A-Z]{2,}-\d+', r'\d{4}-\d{2}-\d{2}', r'-\d+$']
@@ -269,6 +371,7 @@ async def user_dashboard(query, context):
     message = f"""📊 *USER DASHBOARD*
 
 👤 *Profil Anda:*
+
 • Total nomor dilihat: *{total_seen}*
 • Aktivitas 24 jam: *{last_24h}*
 • Total stok sistem: *{total_stok}*
