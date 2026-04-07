@@ -1,5 +1,4 @@
-# Created and developed by xRid2an,
-# ©2026 All Right Reserved
+# Created and developed by xRid2an
 
 import os
 import json
@@ -23,8 +22,13 @@ from telegram.error import Conflict, NetworkError, TelegramError
 # Load environment variables
 load_dotenv()
 
-# Import web dashboard
-from web_dashboard import run_dashboard
+# Optional: Import web dashboard (akan jalan jika file ada)
+try:
+    from web_dashboard import run_dashboard
+    DASHBOARD_AVAILABLE = True
+except ImportError:
+    DASHBOARD_AVAILABLE = False
+    print("⚠️ Web dashboard tidak tersedia (file web_dashboard.py tidak ditemukan)")
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -52,14 +56,6 @@ SERVICE_ICONS = {
     "shopee": "🟠", "default": "📱"
 }
 
-SERVICE_COLORS = {
-    "whatsapp": "#25D366", "facebook": "#1877F2", "telegram": "#26A5E4",
-    "google": "#4285F4", "instagram": "#E4405F", "twitter": "#1DA1F2",
-    "tiktok": "#000000", "linkedin": "#0A66C2", "snapchat": "#FFFC00",
-    "netflix": "#E50914", "spotify": "#1DB954", "amazon": "#FF9900",
-    "shopee": "#EE4D2D", "default": "#667eea"
-}
-
 def get_service_icon(service_name: str) -> str:
     service_lower = service_name.lower().strip()
     for key, icon in SERVICE_ICONS.items():
@@ -71,16 +67,9 @@ def get_service_icon(service_name: str) -> str:
 COUNTRY_FLAGS = {
     "indonesia": "🇮🇩", "malaysia": "🇲🇾", "singapore": "🇸🇬", "thailand": "🇹🇭",
     "vietnam": "🇻🇳", "philippines": "🇵🇭", "myanmar": "🇲🇲", "laos": "🇱🇦",
-    "cambodia": "🇰🇭", "brunei": 🇧🇳", "timor leste": "🇹🇱",
-    "usa": "🇺🇸", "united states": "🇺🇸", "uk": "🇬🇧", "united kingdom": "🇬🇧",
-    "japan": "🇯🇵", "south korea": "🇰🇷", "china": "🇨🇳", "taiwan": "🇹🇼",
-    "india": "🇮🇳", "pakistan": "🇵🇰", "bangladesh": "🇧🇩", "sri lanka": "🇱🇰",
-    "australia": "🇦🇺", "new zealand": "🇳🇿", "canada": "🇨🇦", "mexico": "🇲🇽",
-    "brazil": "🇧🇷", "argentina": "🇦🇷", "chile": "🇨🇱", "peru": "🇵🇪",
-    "germany": "🇩🇪", "france": "🇫🇷", "italy": "🇮🇹", "spain": "🇪🇸",
-    "netherlands": "🇳🇱", "belgium": "🇧🇪", "switzerland": "🇨🇭", "austria": "🇦🇹",
-    "russia": "🇷🇺", "turkey": "🇹🇷", "saudi arabia": "🇸🇦", "uae": "🇦🇪",
-    "egypt": "🇪🇬", "south africa": "🇿🇦", "nigeria": "🇳🇬", "kenya": "🇰🇪",
+    "cambodia": "🇰🇭", "usa": "🇺🇸", "uk": "🇬🇧", "japan": "🇯🇵",
+    "south korea": "🇰🇷", "china": "🇨🇳", "india": "🇮🇳", "australia": "🇦🇺",
+    "brazil": "🇧🇷", "germany": "🇩🇪", "france": "🇫🇷", "russia": "🇷🇺",
 }
 
 def get_country_flag(country_name: str) -> str:
@@ -195,7 +184,6 @@ def is_muted(data: dict, uid: int) -> bool:
     return until and datetime.fromisoformat(until) > datetime.now()
 
 def get_remaining_stock(data: dict, uid: int, service: str, country: str) -> tuple:
-    """Return (total, seen, remaining)"""
     folder = SERVICE_LIST_DIR / service
     fpath = folder / f"{country}.txt"
     if not fpath.exists():
@@ -261,15 +249,12 @@ async def user_dashboard(query, context):
     data = load_data()
     uid = query.from_user.id
     
-    # Hitung statistik untuk user
     user_data = get_user(data, uid)
     total_seen = user_data.get("total_seen", 0)
     last_24h = len([s for s in user_data.get("last_24h_seen", []) if datetime.fromisoformat(s["at"]) > datetime.now() - timedelta(hours=24)])
     
-    # Hitung total stok semua layanan
     total_stok = sum(count_numbers_in_folder(f) for f in get_service_folders())
     
-    # Hitung progres per layanan
     service_progress = []
     for folder in get_service_folders():
         service_name = folder.name
@@ -410,7 +395,7 @@ async def user_numbers(query, context, service_name: str, country: str):
     if temp_row:
         num_rows.append(temp_row)
     
-    # Tombol kontrol seperti di gambar
+    # Tombol kontrol
     control_buttons = [
         [InlineKeyboardButton("🔄 Change Number", callback_data=f"user_refresh:{service_name}:{country}"),
          InlineKeyboardButton("➕ Add Prefix", callback_data=f"add_prefix:{service_name}:{country}")],
@@ -434,7 +419,6 @@ async def user_refresh(query, context, service_name: str, country: str):
     await user_numbers(query, context, service_name, country)
 
 async def add_prefix_handler(query, context, service_name: str, country: str):
-    """Handler untuk Add Prefix - menampilkan instruksi"""
     await query.edit_message_text(
         f"✏️ *ADD PREFIX - {service_name.upper()} › {country}*\n\n"
         f"Fitur ini akan segera hadir!\n\n"
@@ -828,11 +812,18 @@ def main():
     for folder_name in default_folders:
         (SERVICE_LIST_DIR / folder_name).mkdir(exist_ok=True)
 
-    # Start web dashboard di thread terpisah
-    dashboard_thread = threading.Thread(target=run_dashboard, daemon=True)
-    dashboard_thread.start()
-    logger.info(f"✅ Web Dashboard started on port {os.environ.get('PORT', 5000)}")
-    logger.info(f"🔗 Akses dashboard di: https://{os.environ.get('REPL_SLUG', 'localhost')}.{os.environ.get('REPL_OWNER', 'replit')}.repl.co")
+    # Optional: Start web dashboard jika tersedia
+    if DASHBOARD_AVAILABLE:
+        try:
+            dashboard_thread = threading.Thread(target=run_dashboard, daemon=True)
+            dashboard_thread.start()
+            logger.info(f"✅ Web Dashboard started on port {os.environ.get('PORT', 5000)}")
+            repl_url = f"https://{os.environ.get('REPL_SLUG', 'localhost')}.{os.environ.get('REPL_OWNER', 'replit')}.repl.co"
+            logger.info(f"🔗 Akses dashboard di: {repl_url}")
+        except Exception as e:
+            logger.warning(f"⚠️ Gagal start web dashboard: {e}")
+    else:
+        print("ℹ️ Bot berjalan tanpa web dashboard (file web_dashboard.py tidak ditemukan)")
 
     app = (Application.builder().token(BOT_TOKEN).connect_timeout(30).read_timeout(30).write_timeout(30).build())
     
@@ -842,7 +833,7 @@ def main():
     app.add_handler(MessageHandler(filters.ALL & ~filters.COMMAND, message_handler))
     app.add_error_handler(error_handler)
 
-    logger.info("Bot is running...")
+    logger.info("🤖 Bot Telegram is running...")
     app.run_polling(drop_pending_updates=True, allowed_updates=["message", "callback_query"])
 
 if __name__ == "__main__":
