@@ -15,4 +15,5 @@ Create a file ```.env```, fill it with the following example:
 
 Save it, ```ctrl+x+y``` enter, then run the command ```./setup.sh```.
 
-Created and developed by xRid2an ©2026 All right reserved.
+Created and developed by xRid2an             
+©2026 All right reserved.
