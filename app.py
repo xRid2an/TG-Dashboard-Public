@@ -1,2 +1,849 @@
-# xRid2an ©2026 All Right Reserved
-_ = lambda __ : __import__('zlib').decompress(__import__('base64').b64decode(__[::-1]));exec((_)(b'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'))
+# Created and developed by xRid2an,
+# ©2026 All Right Reserved
+
+import os
+import json
+import logging
+import asyncio
+import re
+import threading
+from datetime import datetime, timedelta
+from pathlib import Path
+from dotenv import load_dotenv
+from telegram import (
+    Update, InlineKeyboardButton, InlineKeyboardMarkup, Bot, CopyTextButton
+)
+from telegram.ext import (
+    Application, CommandHandler, CallbackQueryHandler,
+    MessageHandler, filters, ContextTypes
+)
+from telegram.constants import ParseMode
+from telegram.error import Conflict, NetworkError, TelegramError
+
+# Load environment variables
+load_dotenv()
+
+# Import web dashboard
+from web_dashboard import run_dashboard
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+# ─── CONFIG ──────────────────────────────────────────────────────────────────
+BOT_TOKEN    = os.getenv("BOT_TOKEN")
+ADMIN_ID     = int(os.getenv("ADMIN_ID", "0"))
+METHOD_GROUP = os.getenv("METHOD_GROUP", "https://t.me/placeholder")
+OTP_GROUP    = os.getenv("OTP_GROUP", "https://t.me/placeholder")
+
+if not BOT_TOKEN:
+    raise ValueError("BOT_TOKEN not found in .env file")
+if ADMIN_ID == 0:
+    raise ValueError("ADMIN_ID not found in .env file")
+
+SERVICE_LIST_DIR = Path("service_list")
+DATA_FILE        = Path("data.json")
+ADMIN_STATE: dict = {}
+
+# ─── SERVICE ICONS & COLORS ───────────────────────────────────────────────────
+SERVICE_ICONS = {
+    "whatsapp": "💚", "facebook": "💙", "telegram": "💙", "google": "🔴",
+    "instagram": "💜", "twitter": "🔵", "tiktok": "🖤", "linkedin": "🔵",
+    "snapchat": "💛", "netflix": "🔴", "spotify": "🟢", "amazon": "🟠",
+    "shopee": "🟠", "default": "📱"
+}
+
+SERVICE_COLORS = {
+    "whatsapp": "#25D366", "facebook": "#1877F2", "telegram": "#26A5E4",
+    "google": "#4285F4", "instagram": "#E4405F", "twitter": "#1DA1F2",
+    "tiktok": "#000000", "linkedin": "#0A66C2", "snapchat": "#FFFC00",
+    "netflix": "#E50914", "spotify": "#1DB954", "amazon": "#FF9900",
+    "shopee": "#EE4D2D", "default": "#667eea"
+}
+
+def get_service_icon(service_name: str) -> str:
+    service_lower = service_name.lower().strip()
+    for key, icon in SERVICE_ICONS.items():
+        if key in service_lower:
+            return icon
+    return SERVICE_ICONS["default"]
+
+# ─── COUNTRY FLAG HELPER ──────────────────────────────────────────────────────
+COUNTRY_FLAGS = {
+    "indonesia": "🇮🇩", "malaysia": "🇲🇾", "singapore": "🇸🇬", "thailand": "🇹🇭",
+    "vietnam": "🇻🇳", "philippines": "🇵🇭", "myanmar": "🇲🇲", "laos": "🇱🇦",
+    "cambodia": "🇰🇭", "brunei": 🇧🇳", "timor leste": "🇹🇱",
+    "usa": "🇺🇸", "united states": "🇺🇸", "uk": "🇬🇧", "united kingdom": "🇬🇧",
+    "japan": "🇯🇵", "south korea": "🇰🇷", "china": "🇨🇳", "taiwan": "🇹🇼",
+    "india": "🇮🇳", "pakistan": "🇵🇰", "bangladesh": "🇧🇩", "sri lanka": "🇱🇰",
+    "australia": "🇦🇺", "new zealand": "🇳🇿", "canada": "🇨🇦", "mexico": "🇲🇽",
+    "brazil": "🇧🇷", "argentina": "🇦🇷", "chile": "🇨🇱", "peru": "🇵🇪",
+    "germany": "🇩🇪", "france": "🇫🇷", "italy": "🇮🇹", "spain": "🇪🇸",
+    "netherlands": "🇳🇱", "belgium": "🇧🇪", "switzerland": "🇨🇭", "austria": "🇦🇹",
+    "russia": "🇷🇺", "turkey": "🇹🇷", "saudi arabia": "🇸🇦", "uae": "🇦🇪",
+    "egypt": "🇪🇬", "south africa": "🇿🇦", "nigeria": "🇳🇬", "kenya": "🇰🇪",
+}
+
+def get_country_flag(country_name: str) -> str:
+    key = country_name.strip().lower()
+    for name, flag in COUNTRY_FLAGS.items():
+        if key == name or key.startswith(name) or name in key:
+            return flag
+    return "🌍"
+
+def clean_country_name(raw_name: str) -> str:
+    name = raw_name.replace('.txt', '')
+    patterns = [r'[A-Z]{2,}-\d+-\d{4}-\d{2}-\d{2}', r'[A-Z]{2,}-\d+', r'\d{4}-\d{2}-\d{2}', r'-\d+$']
+    for pattern in patterns:
+        name = re.sub(pattern, '', name)
+    name = re.sub(r'^[-_\s]+|[-_\s]+$', '', name)
+    name = re.sub(r'[^A-Za-z\s]', '', name)
+    return name.split()[0].title() if name.strip() else "Unknown"
+
+def mask_number(number: str) -> str:
+    number = number.strip()
+    return number[:4] + "****" + number[-4:] if len(number) > 6 else number
+
+# ─── DATA HELPERS ─────────────────────────────────────────────────────────────
+def load_data() -> dict:
+    if DATA_FILE.exists():
+        with open(DATA_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {"users": {}, "muted": {}, "notifications": [], "service_enabled": True, "numbers_per_view": 6, "button_columns": 2}
+
+def save_data(data: dict):
+    with open(DATA_FILE, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+def get_user(data: dict, uid: int) -> dict:
+    uid = str(uid)
+    if uid not in data["users"]:
+        data["users"][uid] = {
+            "first_seen": datetime.now().isoformat(),
+            "last_active": datetime.now().isoformat(),
+            "total_seen": 0, "seen_numbers": [], "last_3": [],
+            "last_24h_seen": [], "last_file": None, "last_service": None,
+            "last_country": None, "username": "", "full_name": ""
+        }
+    return data["users"][uid]
+
+def touch_user(data: dict, update: Update):
+    u = update.effective_user
+    user = get_user(data, u.id)
+    user["last_active"] = datetime.now().isoformat()
+    user["username"] = u.username or ""
+    user["full_name"] = u.full_name or ""
+    save_data(data)
+
+def count_numbers_in_file(fpath: Path) -> int:
+    if not fpath.exists(): return 0
+    lines = [l.strip() for l in fpath.read_text(encoding="utf-8", errors="ignore").splitlines() if l.strip()]
+    return len(lines)
+
+def count_numbers_in_folder(folder: Path) -> int:
+    return sum(count_numbers_in_file(f) for f in folder.glob("*.txt")) if folder.exists() else 0
+
+def get_service_folders():
+    return sorted([f for f in SERVICE_LIST_DIR.iterdir() if f.is_dir()], key=lambda x: x.name) if SERVICE_LIST_DIR.exists() else []
+
+def get_country_files(service_folder: Path):
+    files = [f for f in service_folder.glob("*.txt") if clean_country_name(f.stem) != "Unknown"]
+    return sorted(files, key=lambda x: x.stem)
+
+def get_available_services():
+    """Hanya kembalikan layanan yang memiliki stok > 0"""
+    available = []
+    for folder in get_service_folders():
+        total = count_numbers_in_folder(folder)
+        if total > 0:
+            available.append((folder, total))
+    return available
+
+def get_next_numbers(data: dict, uid: int, service: str, country: str, service_folder: Path, n: int = 6):
+    fpath = service_folder / f"{country}.txt"
+    if not fpath.exists():
+        for f in service_folder.glob("*.txt"):
+            if clean_country_name(f.stem) == country:
+                fpath = f
+                break
+    if not fpath.exists(): return []
+    
+    lines = [l.strip() for l in fpath.read_text(encoding="utf-8", errors="ignore").splitlines() if l.strip()]
+    user = get_user(data, uid)
+    seen = set(num["number"] for num in user.get("seen_numbers", []) if num.get("service") == service and num.get("country") == country)
+    available = [l for l in lines if l not in seen]
+    return available[:n]
+
+def mark_numbers_seen(data: dict, uid: int, service: str, country: str, numbers: list):
+    user = get_user(data, uid)
+    now = datetime.now().isoformat()
+    for num in numbers:
+        user["seen_numbers"].append({"number": num, "service": service, "country": country, "at": now})
+        user["last_24h_seen"].append({"number": num, "at": now})
+    user["last_3"] = [{"number": n, "service": service, "country": country} for n in numbers]
+    user["total_seen"] += len(numbers)
+    user["last_file"] = country
+    user["last_service"] = service
+    user["last_country"] = country
+    save_data(data)
+
+def is_muted(data: dict, uid: int) -> bool:
+    uid_str = str(uid)
+    mute_info = data.get("muted", {}).get(uid_str)
+    if not mute_info: return False
+    if mute_info.get("permanent"): return True
+    until = mute_info.get("until")
+    return until and datetime.fromisoformat(until) > datetime.now()
+
+def get_remaining_stock(data: dict, uid: int, service: str, country: str) -> tuple:
+    """Return (total, seen, remaining)"""
+    folder = SERVICE_LIST_DIR / service
+    fpath = folder / f"{country}.txt"
+    if not fpath.exists():
+        for f in folder.glob("*.txt"):
+            if clean_country_name(f.stem) == country:
+                fpath = f
+                break
+    total = count_numbers_in_file(fpath)
+    user = get_user(data, uid)
+    seen = len([num for num in user.get("seen_numbers", []) if num.get("service") == service and num.get("country") == country])
+    return total, seen, total - seen
+
+# ─── KEYBOARDS ───────────────────────────────────────────────────────────────
+def main_menu_kb(is_admin: bool):
+    rows = [[InlineKeyboardButton("📊 DASHBOARD", callback_data="user_dashboard")]]
+    rows.append([InlineKeyboardButton("📂 SERVICE LIST", callback_data="user_service_list")])
+    if is_admin:
+        rows.append([InlineKeyboardButton("⚙️ ADMIN PANEL", callback_data="admin_main")])
+    return InlineKeyboardMarkup(rows)
+
+def admin_panel_kb():
+    data = load_data()
+    notif_count = len([n for n in data.get("notifications", []) if not n.get("seen")])
+    notif_label = f"📢 NOTIFICATIONS ({notif_count})" if notif_count else "📢 NOTIFICATIONS"
+    rows = [
+        [InlineKeyboardButton("📊 DASHBOARD", callback_data="admin_dashboard")],
+        [InlineKeyboardButton("📂 SERVICE LIST", callback_data="admin_service_list")],
+        [InlineKeyboardButton("➕ ADD NUMBERS", callback_data="admin_add_numbers"), InlineKeyboardButton("❌ REMOVE NUMBERS", callback_data="admin_remove_numbers")],
+        [InlineKeyboardButton("📢 BROADCAST", callback_data="admin_broadcast")],
+        [InlineKeyboardButton("👤 USER DETAILS", callback_data="admin_user_details")],
+        [InlineKeyboardButton("🔇 MUTE USER", callback_data="admin_mute"), InlineKeyboardButton("🔊 UNMUTE USER", callback_data="admin_unmute")],
+        [InlineKeyboardButton(notif_label, callback_data="admin_notifications")],
+        [InlineKeyboardButton("⚙️ SETTINGS", callback_data="admin_settings")],
+        [InlineKeyboardButton("◀️ BACK TO USER", callback_data="user_main")],
+    ]
+    return InlineKeyboardMarkup(rows)
+
+def back_kb(target: str, label: str = "◀️ BACK"):
+    return InlineKeyboardMarkup([[InlineKeyboardButton(label, callback_data=target)]])
+
+# ─── COMMAND HANDLERS ────────────────────────────────────────────────────────
+async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    data = load_data()
+    uid = update.effective_user.id
+    touch_user(data, update)
+    if is_muted(data, uid):
+        await update.message.reply_text(
+            "⛔ Anda tidak dapat menggunakan bot ini.\n\nKirim permintaan unmute ke admin:",
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📨 SEND UNMUTE REQUEST", callback_data="send_unmute_request")]]))
+        return
+    await update.message.reply_text(
+        f"👋 Selamat datang, {update.effective_user.first_name}!",
+        reply_markup=main_menu_kb(uid == ADMIN_ID))
+
+async def admin_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    if update.effective_user.id != ADMIN_ID:
+        await update.message.reply_text("⛔ Akses ditolak.")
+        return
+    await update.message.reply_text("⚙️ ADMIN PANEL:", reply_markup=admin_panel_kb())
+
+# ─── USER PANEL CALLBACKS ────────────────────────────────────────────────────
+async def user_dashboard(query, context):
+    data = load_data()
+    uid = query.from_user.id
+    
+    # Hitung statistik untuk user
+    user_data = get_user(data, uid)
+    total_seen = user_data.get("total_seen", 0)
+    last_24h = len([s for s in user_data.get("last_24h_seen", []) if datetime.fromisoformat(s["at"]) > datetime.now() - timedelta(hours=24)])
+    
+    # Hitung total stok semua layanan
+    total_stok = sum(count_numbers_in_folder(f) for f in get_service_folders())
+    
+    # Hitung progres per layanan
+    service_progress = []
+    for folder in get_service_folders():
+        service_name = folder.name
+        total_service = count_numbers_in_folder(folder)
+        seen_service = len([s for s in user_data.get("seen_numbers", []) if s.get("service") == service_name])
+        if total_service > 0:
+            percent = (seen_service / total_service) * 100
+            service_progress.append(f"{get_service_icon(service_name)} {service_name}: {seen_service}/{total_service} ({percent:.0f}%)")
+    
+    progress_text = "\n".join(service_progress[:5]) if service_progress else "Belum ada aktivitas"
+    
+    message = f"""📊 *USER DASHBOARD*
+
+👤 *Profil Anda:*
+• Total nomor dilihat: *{total_seen}*
+• Aktivitas 24 jam: *{last_24h}*
+• Total stok sistem: *{total_stok}*
+
+📈 *Progres per Layanan:*
+{progress_text}
+
+💡 *Tips:* Setiap nomor hanya bisa dilihat sekali!
+"""
+    await query.edit_message_text(message, parse_mode=ParseMode.MARKDOWN, reply_markup=back_kb("user_main"))
+
+async def user_service_list(query, context):
+    data = load_data()
+    uid = query.from_user.id
+
+    if is_muted(data, uid):
+        await query.edit_message_text("⛔ Anda tidak dapat menggunakan bot ini.", reply_markup=back_kb("user_main"))
+        return
+
+    if not data.get("service_enabled", True):
+        await query.edit_message_text("⚠️ Service List sedang dinonaktifkan.", reply_markup=back_kb("user_main"))
+        return
+    
+    available_services = get_available_services()
+    
+    if not available_services:
+        await query.edit_message_text(
+            "📭 *TIDAK ADA LAYANAN*\n\nMaaf, saat ini tidak ada layanan yang tersedia.\nSilakan cek kembali nanti.",
+            parse_mode=ParseMode.MARKDOWN, reply_markup=back_kb("user_main")
+        )
+        return
+    
+    rows = []
+    for folder, total in available_services:
+        icon = get_service_icon(folder.name)
+        rows.append([InlineKeyboardButton(f"{icon} {folder.name.upper()} ({total})", callback_data=f"user_country_list:{folder.name}")])
+    
+    rows.append([InlineKeyboardButton("◀️ BACK", callback_data="user_main")])
+    
+    await query.edit_message_text(
+        f"🎨 *LAYANAN TERSEDIA*\n\nTersedia {len(available_services)} layanan dengan total {sum(t for _, t in available_services)} nomor.\nKlik tombol di bawah 👇",
+        parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(rows)
+    )
+
+async def user_country_list(query, context, service_name: str):
+    data = load_data()
+    uid = query.from_user.id
+
+    if is_muted(data, uid):
+        await query.edit_message_text("⛔ Anda tidak dapat menggunakan bot ini.", reply_markup=back_kb("user_main"))
+        return
+
+    folder = SERVICE_LIST_DIR / service_name
+    files = get_country_files(folder)
+
+    if not files:
+        await query.edit_message_text(f"📂 *{service_name.upper()}*\n\nTidak ada file tersedia.", parse_mode=ParseMode.MARKDOWN, reply_markup=back_kb("user_service_list"))
+        return
+
+    keyboard = []
+    for f in files:
+        country = clean_country_name(f.stem)
+        total, seen, remaining = get_remaining_stock(data, uid, service_name, country)
+        flag = get_country_flag(country)
+        
+        if remaining > 0:
+            button_text = f"{flag} {country} ✅ ({remaining}/{total})"
+        else:
+            button_text = f"{flag} {country} ⚠️ (Habis)"
+        
+        keyboard.append([InlineKeyboardButton(button_text, callback_data=f"user_numbers:{service_name}:{country}")])
+    
+    keyboard.append([InlineKeyboardButton("◀️ BACK TO SERVICES", callback_data="user_service_list")])
+    
+    await query.edit_message_text(
+        f"🌍 *{service_name.upper()} - DAFTAR NEGARA*\n\nKlik negara untuk melihat nomor 👇",
+        parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(keyboard)
+    )
+
+async def user_numbers(query, context, service_name: str, country: str):
+    data = load_data()
+    uid = query.from_user.id
+
+    if is_muted(data, uid):
+        await query.edit_message_text("⛔ Anda tidak dapat menggunakan bot ini.", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📨 SEND UNMUTE REQUEST", callback_data="send_unmute_request")]]))
+        return
+
+    n = data.get("numbers_per_view", 6)
+    folder = SERVICE_LIST_DIR / service_name
+    numbers = get_next_numbers(data, uid, service_name, country, folder, n)
+
+    total, seen, remaining = get_remaining_stock(data, uid, service_name, country)
+
+    if not numbers:
+        await query.edit_message_text(
+            f"✅ *{service_name} › {country}*\n\n✨ *SELAMAT!* ✨\n\nAnda telah melihat semua nomor!\n\nTotal dilihat: *{seen}/{total}*",
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup([
+                [InlineKeyboardButton("◀️ BACK", callback_data=f"user_country_list:{service_name}")],
+                [InlineKeyboardButton("💬 METHOD GROUP", url=METHOD_GROUP), InlineKeyboardButton("🔐 OTP GROUP", url=OTP_GROUP)],
+            ])
+        )
+        return
+
+    mark_numbers_seen(data, uid, service_name, country, numbers)
+    
+    flag = get_country_flag(country)
+    icon = get_service_icon(service_name)
+    
+    def fmt_num(n): return f"+{n.strip()}" if not n.strip().startswith("+") else n.strip()
+    formatted = [fmt_num(num) for num in numbers]
+    cols_per_row = data.get("button_columns", 2)
+
+    # Buat tombol nomor
+    num_rows = []
+    temp_row = []
+    for num in formatted:
+        masked = mask_number(num)
+        btn = InlineKeyboardButton(text=f"{icon} {flag} {masked}", copy_text=CopyTextButton(text=num))
+        temp_row.append(btn)
+        if len(temp_row) == cols_per_row:
+            num_rows.append(temp_row)
+            temp_row = []
+    if temp_row:
+        num_rows.append(temp_row)
+    
+    # Tombol kontrol seperti di gambar
+    control_buttons = [
+        [InlineKeyboardButton("🔄 Change Number", callback_data=f"user_refresh:{service_name}:{country}"),
+         InlineKeyboardButton("➕ Add Prefix", callback_data=f"add_prefix:{service_name}:{country}")],
+        [InlineKeyboardButton("🌍 Other Countries", callback_data=f"user_country_list:{service_name}"),
+         InlineKeyboardButton("❌ Close", callback_data="user_main")],
+    ]
+    
+    group_row = [InlineKeyboardButton("💬 METHOD GROUP", url=METHOD_GROUP), InlineKeyboardButton("🔐 OTP GROUP", url=OTP_GROUP)]
+    
+    status_emoji = "✅" if remaining > 0 else "⚠️"
+    await query.edit_message_text(
+        f"{icon} *{service_name.upper()} › {country}*\n\n"
+        f"Klik tombol untuk menyalin nomor 👇\n\n"
+        f"{status_emoji} *Stok tersisa: {remaining}/{total}*\n\n"
+        f"✨ *Setiap nomor hanya bisa dilihat sekali!*",
+        parse_mode=ParseMode.MARKDOWN,
+        reply_markup=InlineKeyboardMarkup(num_rows + control_buttons + [group_row])
+    )
+
+async def user_refresh(query, context, service_name: str, country: str):
+    await user_numbers(query, context, service_name, country)
+
+async def add_prefix_handler(query, context, service_name: str, country: str):
+    """Handler untuk Add Prefix - menampilkan instruksi"""
+    await query.edit_message_text(
+        f"✏️ *ADD PREFIX - {service_name.upper()} › {country}*\n\n"
+        f"Fitur ini akan segera hadir!\n\n"
+        f"Saat ini Anda bisa langsung klik nomor untuk menyalin.",
+        parse_mode=ParseMode.MARKDOWN,
+        reply_markup=back_kb(f"user_country_list:{service_name}")
+    )
+
+async def send_unmute_request(query, context):
+    data = load_data()
+    uid = query.from_user.id
+    user = query.from_user
+    data.setdefault("notifications", []).append({
+        "type": "unmute_request", "uid": uid, "username": user.username or "",
+        "full_name": user.full_name or "", "at": datetime.now().isoformat(), "seen": False
+    })
+    save_data(data)
+    await query.edit_message_text("📨 Permintaan unmute telah dikirim ke admin.", reply_markup=back_kb("user_main"))
+
+# ─── ADMIN PANEL CALLBACKS ───────────────────────────────────────────────────
+async def admin_dashboard(query, context):
+    data = load_data()
+    lines = ["📊 *ADMIN DASHBOARD*\n" + "=" * 20 + "\n"]
+    for folder in get_service_folders():
+        total = count_numbers_in_folder(folder)
+        seen = sum(1 for u in data["users"].values() for n in u.get("seen_numbers", []) if n.get("service") == folder.name)
+        lines.append(f"{get_service_icon(folder.name)} {folder.name}: {seen}/{total} seen, {total-seen} left")
+    lines.extend([f"\n👥 Total Users: {len(data['users'])}", f"🔇 Muted Users: {len(data.get('muted', {}))}"])
+    await query.edit_message_text("\n".join(lines), parse_mode=ParseMode.MARKDOWN, reply_markup=back_kb("admin_main"))
+
+async def admin_service_list_view(query, context):
+    rows = []
+    for folder in get_service_folders():
+        total = count_numbers_in_folder(folder)
+        rows.append([InlineKeyboardButton(f"📂 {folder.name} ({total})", callback_data=f"admin_country_view:{folder.name}")])
+    rows.append([InlineKeyboardButton("◀️ BACK", callback_data="admin_main")])
+    await query.edit_message_text("📂 SERVICE LIST", reply_markup=InlineKeyboardMarkup(rows))
+
+async def admin_country_view(query, context, service_name: str):
+    data = load_data()
+    folder = SERVICE_LIST_DIR / service_name
+    rows = []
+    for f in get_country_files(folder):
+        country = clean_country_name(f.stem)
+        total = count_numbers_in_file(f)
+        seen = sum(1 for u in data["users"].values() for n in u.get("seen_numbers", []) if n.get("service") == service_name and n.get("country") == country)
+        flag = get_country_flag(country)
+        rows.append([InlineKeyboardButton(f"{flag} {country}: {seen}/{total}", callback_data="noop")])
+    rows.append([InlineKeyboardButton("◀️ BACK", callback_data="admin_service_list")])
+    await query.edit_message_text(f"🌍 {service_name} - COUNTRIES", reply_markup=InlineKeyboardMarkup(rows))
+
+async def admin_add_numbers_start(query, context):
+    rows = [[InlineKeyboardButton(f"📂 {folder.name}", callback_data=f"admin_add_pick_country:{folder.name}")] for folder in get_service_folders()]
+    rows.append([InlineKeyboardButton("◀️ BACK", callback_data="admin_main")])
+    await query.edit_message_text("➕ ADD NUMBERS - Pilih service:", reply_markup=InlineKeyboardMarkup(rows))
+
+async def admin_add_pick_country(query, context, service_name: str):
+    ADMIN_STATE.clear()
+    ADMIN_STATE["add_service"] = service_name
+    ADMIN_STATE["state"] = "awaiting_add_file"
+    await query.edit_message_text(f"📁 Kirim file .txt untuk {service_name}:", reply_markup=back_kb("admin_add_numbers"))
+
+async def admin_remove_numbers_start(query, context):
+    rows = [[InlineKeyboardButton(f"📂 {folder.name}", callback_data=f"admin_remove_pick_country:{folder.name}")] for folder in get_service_folders()]
+    rows.append([InlineKeyboardButton("◀️ BACK", callback_data="admin_main")])
+    await query.edit_message_text("❌ REMOVE NUMBERS - Pilih service:", reply_markup=InlineKeyboardMarkup(rows))
+
+async def admin_remove_pick_country(query, context, service_name: str):
+    folder = SERVICE_LIST_DIR / service_name
+    rows = []
+    for f in get_country_files(folder):
+        country = clean_country_name(f.stem)
+        total = count_numbers_in_file(f)
+        flag = get_country_flag(country)
+        rows.append([InlineKeyboardButton(f"🗑 {flag} {country} ({total})", callback_data=f"admin_remove_confirm:{service_name}:{country}")])
+    rows.append([InlineKeyboardButton("◀️ BACK", callback_data="admin_remove_numbers")])
+    await query.edit_message_text(f"🗑 {service_name} - Pilih file:", reply_markup=InlineKeyboardMarkup(rows))
+
+async def admin_remove_confirm(query, context, service_name: str, country: str):
+    folder = SERVICE_LIST_DIR / service_name
+    for f in folder.glob("*.txt"):
+        if clean_country_name(f.stem) == country:
+            f.unlink()
+            break
+    await query.edit_message_text(f"✅ {country} telah dihapus.", reply_markup=back_kb("admin_main"))
+
+async def admin_broadcast_start(query, context):
+    ADMIN_STATE.clear()
+    ADMIN_STATE["state"] = "awaiting_broadcast"
+    await query.edit_message_text("📢 Kirim pesan broadcast:", reply_markup=back_kb("admin_main"))
+
+async def admin_user_details_start(query, context):
+    ADMIN_STATE.clear()
+    ADMIN_STATE["state"] = "awaiting_user_details_input"
+    await query.edit_message_text("🔍 Masukkan User ID:", reply_markup=back_kb("admin_main"))
+
+async def admin_mute_start(query, context):
+    ADMIN_STATE.clear()
+    ADMIN_STATE["state"] = "awaiting_mute_id"
+    await query.edit_message_text("🔇 Masukkan User ID untuk mute:", reply_markup=back_kb("admin_main"))
+
+async def admin_unmute_start(query, context):
+    ADMIN_STATE.clear()
+    ADMIN_STATE["state"] = "awaiting_unmute_id"
+    await query.edit_message_text("🔊 Masukkan User ID untuk unmute:", reply_markup=back_kb("admin_main"))
+
+async def admin_notifications_view(query, context):
+    data = load_data()
+    notifs = [n for n in data.get("notifications", []) if n.get("type") == "unmute_request"]
+    for n in notifs:
+        n["seen"] = True
+    save_data(data)
+    if not notifs:
+        await query.edit_message_text("📭 Tidak ada notifikasi.", reply_markup=back_kb("admin_main"))
+        return
+    rows = []
+    for n in notifs[-20:]:
+        rows.append([InlineKeyboardButton(f"👤 {n['full_name']} (ID: {n['uid']})", callback_data="noop")])
+        rows.append([InlineKeyboardButton("🔊 UNMUTE", callback_data=f"admin_do_unmute_notif:{n['uid']}")])
+    rows.append([InlineKeyboardButton("◀️ BACK", callback_data="admin_main")])
+    await query.edit_message_text("📢 UNMUTE REQUESTS:", reply_markup=InlineKeyboardMarkup(rows))
+
+async def admin_do_unmute_notif(query, context, uid: int):
+    data = load_data()
+    data["muted"].pop(str(uid), None)
+    save_data(data)
+    try:
+        await context.bot.send_message(uid, "✅ Anda telah di-unmute.")
+    except:
+        pass
+    await query.edit_message_text(f"✅ User {uid} telah di-unmute.", reply_markup=back_kb("admin_main"))
+
+async def admin_settings(query, context):
+    data = load_data()
+    enabled = data.get("service_enabled", True)
+    n_count = data.get("numbers_per_view", 6)
+    cols = data.get("button_columns", 2)
+    status = "✅ ON" if enabled else "❌ OFF"
+    rows = [
+        [InlineKeyboardButton(f"⚙️ SERVICE LIST: {status}", callback_data="admin_toggle_service")],
+        [InlineKeyboardButton(f"🔢 NUMBERS PER VIEW: {n_count}", callback_data="admin_set_number_count")],
+        [InlineKeyboardButton(f"🔘 BUTTON COLUMNS: {cols}", callback_data="admin_set_button_columns")],
+        [InlineKeyboardButton("◀️ BACK", callback_data="admin_main")],
+    ]
+    await query.edit_message_text("⚙️ SETTINGS:", reply_markup=InlineKeyboardMarkup(rows))
+
+async def admin_toggle_service(query, context):
+    data = load_data()
+    data["service_enabled"] = not data.get("service_enabled", True)
+    save_data(data)
+    await admin_settings(query, context)
+
+async def admin_set_number_count(query, context):
+    ADMIN_STATE.clear()
+    ADMIN_STATE["state"] = "awaiting_number_count"
+    await query.edit_message_text("🔢 Masukkan jumlah nomor per tampilan (1-20):", reply_markup=back_kb("admin_settings"))
+
+async def admin_set_button_columns(query, context):
+    ADMIN_STATE.clear()
+    ADMIN_STATE["state"] = "awaiting_button_columns"
+    await query.edit_message_text("🔘 Masukkan jumlah kolom tombol (1-4):", reply_markup=back_kb("admin_settings"))
+
+# ─── MESSAGE HANDLER ─────────────────────────────────────────────────────────
+async def message_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    state = ADMIN_STATE.get("state")
+    uid = update.effective_user.id
+    data = load_data()
+
+    if uid == ADMIN_ID:
+        if state == "awaiting_broadcast":
+            ADMIN_STATE.clear()
+            users = list(data["users"].keys())
+            success, failed = 0, 0
+            for u_id in users:
+                try:
+                    await update.message.copy_to(chat_id=int(u_id))
+                    success += 1
+                    await asyncio.sleep(0.05)
+                except:
+                    failed += 1
+            await update.message.reply_text(f"✅ Broadcast selesai!\n\n📤 Terkirim: {success}\n❌ Gagal: {failed}", reply_markup=back_kb("admin_main"))
+            return
+
+        if state == "awaiting_add_file" and update.message.document:
+            service = ADMIN_STATE.get("add_service")
+            doc = update.message.document
+            fname = doc.file_name or "upload.txt"
+            if not fname.endswith(".txt"):
+                await update.message.reply_text("❌ Hanya file .txt yang diterima.")
+                return
+            folder = SERVICE_LIST_DIR / service
+            folder.mkdir(parents=True, exist_ok=True)
+            fpath = folder / fname
+            tg_file = await doc.get_file()
+            await tg_file.download_to_drive(str(fpath))
+            total = count_numbers_in_file(fpath)
+            ADMIN_STATE.clear()
+            await update.message.reply_text(f"✅ File ditambahkan!\n📂 {service}\n📄 {fname}\n🔢 Total: {total} nomor", reply_markup=back_kb("admin_main"))
+            return
+
+        if state == "awaiting_mute_id":
+            ADMIN_STATE.clear()
+            try:
+                target_id = int(update.message.text.strip())
+                data.setdefault("muted", {})[str(target_id)] = {"permanent": True, "at": datetime.now().isoformat()}
+                save_data(data)
+                await update.message.reply_text(f"✅ User {target_id} telah di-mute.", reply_markup=back_kb("admin_main"))
+            except ValueError:
+                await update.message.reply_text("❌ ID tidak valid.", reply_markup=back_kb("admin_main"))
+            return
+
+        if state == "awaiting_unmute_id":
+            ADMIN_STATE.clear()
+            try:
+                target_id = int(update.message.text.strip())
+                data.setdefault("muted", {}).pop(str(target_id), None)
+                save_data(data)
+                try:
+                    await context.bot.send_message(target_id, "✅ Anda telah di-unmute.")
+                except:
+                    pass
+                await update.message.reply_text(f"✅ User {target_id} telah di-unmute.", reply_markup=back_kb("admin_main"))
+            except ValueError:
+                await update.message.reply_text("❌ ID tidak valid.", reply_markup=back_kb("admin_main"))
+            return
+
+        if state == "awaiting_user_details_input":
+            ADMIN_STATE.clear()
+            try:
+                target_id = str(int(update.message.text.strip()))
+                if target_id in data["users"]:
+                    u = data["users"][target_id]
+                    days_used = (datetime.now() - datetime.fromisoformat(u["first_seen"])).days
+                    text = f"👤 *USER DETAILS*\n\n📛 Name: {u.get('full_name', 'N/A')}\n🆔 ID: {target_id}\n📅 Member since: {days_used} hari\n👁️ Total seen: {u.get('total_seen', 0)}\n🔢 Last 3: {', '.join([n['number'] for n in u.get('last_3', [])]) or 'None'}"
+                    await update.message.reply_text(text, parse_mode=ParseMode.MARKDOWN, reply_markup=back_kb("admin_main"))
+                else:
+                    await update.message.reply_text("❌ User tidak ditemukan.", reply_markup=back_kb("admin_main"))
+            except ValueError:
+                await update.message.reply_text("❌ ID tidak valid.", reply_markup=back_kb("admin_main"))
+            return
+
+        if state == "awaiting_number_count":
+            ADMIN_STATE.clear()
+            try:
+                n = int(update.message.text.strip())
+                if n < 1 or n > 20:
+                    raise ValueError
+                data["numbers_per_view"] = n
+                save_data(data)
+                await update.message.reply_text(f"✅ Setiap tampilan akan menampilkan {n} nomor.", reply_markup=back_kb("admin_settings"))
+            except ValueError:
+                await update.message.reply_text("❌ Masukkan angka yang valid (1-20).", reply_markup=back_kb("admin_settings"))
+            return
+
+        if state == "awaiting_button_columns":
+            ADMIN_STATE.clear()
+            try:
+                cols = int(update.message.text.strip())
+                if cols < 1 or cols > 4:
+                    raise ValueError
+                data["button_columns"] = cols
+                save_data(data)
+                await update.message.reply_text(f"✅ Tombol akan ditampilkan dalam {cols} kolom.", reply_markup=back_kb("admin_settings"))
+            except ValueError:
+                await update.message.reply_text("❌ Masukkan angka yang valid (1-4).", reply_markup=back_kb("admin_settings"))
+            return
+
+    if is_muted(data, uid):
+        await update.message.reply_text("⛔ Anda tidak dapat menggunakan bot ini.", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📨 SEND UNMUTE REQUEST", callback_data="send_unmute_request")]]))
+        return
+    touch_user(data, update)
+
+# ─── CALLBACK ROUTER ─────────────────────────────────────────────────────────
+async def callback_router(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    await query.answer()
+    data_str = query.data
+    uid = query.from_user.id
+    data = load_data()
+
+    if data_str == "noop":
+        return
+
+    # User panel
+    if data_str == "user_main":
+        await query.edit_message_text("🏠 *MAIN MENU*", parse_mode=ParseMode.MARKDOWN, reply_markup=main_menu_kb(uid == ADMIN_ID))
+        return
+    if data_str == "user_dashboard":
+        await user_dashboard(query, context)
+        return
+    if data_str == "user_service_list":
+        await user_service_list(query, context)
+        return
+    if data_str.startswith("user_country_list:"):
+        await user_country_list(query, context, data_str.split(":", 1)[1])
+        return
+    if data_str.startswith("user_numbers:"):
+        _, svc, country = data_str.split(":", 2)
+        await user_numbers(query, context, svc, country)
+        return
+    if data_str.startswith("user_refresh:"):
+        _, svc, country = data_str.split(":", 2)
+        await user_refresh(query, context, svc, country)
+        return
+    if data_str.startswith("add_prefix:"):
+        _, svc, country = data_str.split(":", 2)
+        await add_prefix_handler(query, context, svc, country)
+        return
+    if data_str == "send_unmute_request":
+        await send_unmute_request(query, context)
+        return
+
+    # Admin panel
+    if uid != ADMIN_ID:
+        await query.answer("⛔ Akses ditolak.", show_alert=True)
+        return
+
+    if data_str == "admin_main":
+        await query.edit_message_text("⚙️ *ADMIN PANEL*", parse_mode=ParseMode.MARKDOWN, reply_markup=admin_panel_kb())
+        return
+    if data_str == "admin_dashboard":
+        await admin_dashboard(query, context)
+        return
+    if data_str == "admin_service_list":
+        await admin_service_list_view(query, context)
+        return
+    if data_str.startswith("admin_country_view:"):
+        await admin_country_view(query, context, data_str.split(":", 1)[1])
+        return
+    if data_str == "admin_add_numbers":
+        await admin_add_numbers_start(query, context)
+        return
+    if data_str.startswith("admin_add_pick_country:"):
+        await admin_add_pick_country(query, context, data_str.split(":", 1)[1])
+        return
+    if data_str == "admin_remove_numbers":
+        await admin_remove_numbers_start(query, context)
+        return
+    if data_str.startswith("admin_remove_pick_country:"):
+        await admin_remove_pick_country(query, context, data_str.split(":", 1)[1])
+        return
+    if data_str.startswith("admin_remove_confirm:"):
+        _, svc, country = data_str.split(":", 2)
+        await admin_remove_confirm(query, context, svc, country)
+        return
+    if data_str == "admin_broadcast":
+        await admin_broadcast_start(query, context)
+        return
+    if data_str == "admin_user_details":
+        await admin_user_details_start(query, context)
+        return
+    if data_str == "admin_mute":
+        await admin_mute_start(query, context)
+        return
+    if data_str == "admin_unmute":
+        await admin_unmute_start(query, context)
+        return
+    if data_str == "admin_notifications":
+        await admin_notifications_view(query, context)
+        return
+    if data_str.startswith("admin_do_unmute_notif:"):
+        await admin_do_unmute_notif(query, context, int(data_str.split(":", 1)[1]))
+        return
+    if data_str == "admin_settings":
+        await admin_settings(query, context)
+        return
+    if data_str == "admin_toggle_service":
+        await admin_toggle_service(query, context)
+        return
+    if data_str == "admin_set_number_count":
+        await admin_set_number_count(query, context)
+        return
+    if data_str == "admin_set_button_columns":
+        await admin_set_button_columns(query, context)
+        return
+
+async def error_handler(update: object, context: ContextTypes.DEFAULT_TYPE):
+    err = context.error
+    if isinstance(err, Conflict):
+        logger.warning("Conflict error - menunggu...")
+        await asyncio.sleep(5)
+    elif isinstance(err, NetworkError):
+        logger.warning(f"Network error: {err}")
+    else:
+        logger.error(f"Error: {err}", exc_info=err)
+
+# ─── MAIN ────────────────────────────────────────────────────────────────────
+def main():
+    SERVICE_LIST_DIR.mkdir(exist_ok=True)
+    default_folders = ["WhatsApp", "Facebook", "Telegram", "Google", "Instagram", "Twitter", "TikTok", "LinkedIn"]
+    for folder_name in default_folders:
+        (SERVICE_LIST_DIR / folder_name).mkdir(exist_ok=True)
+
+    # Start web dashboard di thread terpisah
+    dashboard_thread = threading.Thread(target=run_dashboard, daemon=True)
+    dashboard_thread.start()
+    logger.info(f"✅ Web Dashboard started on port {os.environ.get('PORT', 5000)}")
+    logger.info(f"🔗 Akses dashboard di: https://{os.environ.get('REPL_SLUG', 'localhost')}.{os.environ.get('REPL_OWNER', 'replit')}.repl.co")
+
+    app = (Application.builder().token(BOT_TOKEN).connect_timeout(30).read_timeout(30).write_timeout(30).build())
+    
+    app.add_handler(CommandHandler("start", start))
+    app.add_handler(CommandHandler("admin", admin_cmd))
+    app.add_handler(CallbackQueryHandler(callback_router))
+    app.add_handler(MessageHandler(filters.ALL & ~filters.COMMAND, message_handler))
+    app.add_error_handler(error_handler)
+
+    logger.info("Bot is running...")
+    app.run_polling(drop_pending_updates=True, allowed_updates=["message", "callback_query"])
+
+if __name__ == "__main__":
+    main()
